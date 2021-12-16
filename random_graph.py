@@ -17,10 +17,11 @@ from random import random
 
 """ Defining a function, Graph(), that will help us to generate the graph 
 randomly. It will take in two arguments, the number of vertices and 
-the probability at which the edges will be produced."""          # @@ PROB
+the probability at which the edges will be produced."""          
 
 def Graph(number, probability):
-    # Creating a list of vertices which are in range of identified number.
+    # Creating a set to store a list of vertices which are in range of 
+    # identified number.
     Vertex = set([v for v in range(number)])
     # Creating a set that will store Edges between vertices
     Edge = set()
