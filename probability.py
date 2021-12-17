@@ -97,7 +97,7 @@ for i in range(5000):
 try:
     # calculate the probability of getting a graph with euler circuit given the graph is connected
     probability_of_euler = count_euler/count_connected
-    print(f"The estimated probability of getting an euler given that the graph is connected is: {probability_of_euler}")
+    print(f"\n\tThe estimated probability of getting an euler given that the graph is connected is: {probability_of_euler}")
 
 # thrown an exception when count_connected is zero, as we can't divide a number by zero
 except ZeroDivisionError as error:
