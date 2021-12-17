@@ -59,8 +59,18 @@ def Graph(number, probability):
     
     # Checking if the graph has an Euler circuit
     euler = nx.is_eulerian(g)
-    print(f"\nIs_connected: {conn}")
-    print(f"Is_Euler: {euler}")
+    
+    # We will print yes if the graph is connected and no otherwise
+    if conn == True:
+        print("\nIs the graph connected: Yes")
+    else:
+        print("\nIs the graph connected: No")
+        
+    # We will also print yes if the graph has an euler circuit and no otherwise
+    if euler == True:
+        print("\nDoes the graph has Euler circuit: Yes")
+    else:
+        print("\nDoes the graph has Euler circuit: No")
     
     # Returning the graph
     return g
